@@ -1,0 +1,121 @@
+\subsection{Data Sources}
+The articles were searched and collected using three different approaches:
+
+\begin{enumerate}
+\item keyword based search on different online databases
+\item manual screening of selected conference proceedings
+\item manual screening of selected special issues of journals
+\end{enumerate}
+
+The following online databases were used for the keyword based search:
+\begin{itemize}
+\item ISI Web of Science\footnote{https://apps.webofknowledge.com/}
+\item ACM digital library\footnote{https://dl.acm.org/}
+\item Elsevier - ScienceDirect\footnote{https://www.sciencedirect.com/}
+\item Elsevier - Scopus\footnote{http://www.scopus.com/}
+\item IEEE Xplore\footnote{http://ieeexplore.ieee.org/}
+\end{itemize}
+
+The following conference proceedings were searched for relevant articles:
+\begin{itemize}
+\item \textbf{CSCW} Computer-Supported Cooperative Work and Social Computing\footnote{http://cscw.acm.org/}
+\item \textbf{CHI} Conference on Human Factors in Computing Systems\footnote{http://chiYYYY.acm.org/}
+\item \textbf{EC-TEL} European Conference on Technology Enhanced Learning\footnote{http://www.ec-tel.eu/}
+\item \textbf{AMI} International Joint Conference on Ambient Intelligence\footnote{http://www.ami-conferences.org/}
+\item \textbf{C\&T} International Conference on Communities and Technologies\footnote{http://comtech.community/}
+\end{itemize}
+
+The following journal issues were searched for relevant articles:
+\begin{itemize}
+\item \textbf{IJDLDC} International Journal of Digital Literacy and Digital Competence vol. 3 n. 4 - Special Issue on \textit{``Smart City Learning, literacy and Competences''}\footnote{http://www.igi-global.com/journal/international-journal-digital-literacy-digital/1170}
+\item \textbf{IxD\&A} Interaction Design and Architecture(s), vol. 16 (part I)\footnote{\url{http://www.mifav.uniroma2.it/inevent/events/idea2010/index.php?s=10&a=10&link=ToC_16_P}}, vol. 17 (part II)\footnote{\url{http://www.mifav.uniroma2.it/inevent/events/idea2010/index.php?s=10&a=10&link=ToC_17_P}} - Special Issue on \textit{``Smart City Learning - Visions and practical Implementations: toward Horizon 2020''} 
+\end{itemize}
+
+\subsection{Search and Keywords}
+The keywords selection process was driven by the PICO framework. PICO helps to develop a comprehensive set of search keywords for quantitative research terms according to: Population, Intervention or Exposure (PECO), Comparison, Outcomes\cite{schardt_utilization_2007}.
+
+Initially, keywords for all the sections of the framework were selected, but the authors decided later on to relax some constraints in order to avoid missing some possible relevant articles. A \textit{context} section was also added to the schema.
+
+Table \ref{table:keywords} shows the PICO(C) structure with associated keywords.
+
+%% table of keywords here
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{PICO(C) Driven Keywords Framing}
+\label{table:keywords}
+\begin{tabular}{|
+>{\columncolor[HTML]{EFEFEF}}l |l|}
+\hline
+\textbf{Population} & \textit{-} \\ \hline
+\textbf{Intervention} & \textit{learning} \\ \hline
+\textbf{Comparison} & \textit{-} \\ \hline
+\textbf{Outcome} & \textit{\begin{tabular}[c]{@{}l@{}}participation, collaboration, reflection,\\ awareness\end{tabular}} \\ \hline
+\textbf{Context} & \textit{\begin{tabular}[c]{@{}l@{}}cities, smart city, urban, connected city,\\ intelligent city, digital city\end{tabular}} \\ \hline
+\end{tabular}
+\end{table}
+
+A pilot search was conducted on some of the online databases in order to refine the keywords and find a search query that could be adapted and used in all the different online databases.
+
+The final search query used is reported in Table \ref{table:query}.
+
+%% search query
+\begin{table}[ht]
+\renewcommand{\arraystretch}{1.3}
+\centering
+\caption{Search Query}
+\label{table:query}
+\begin{tabular}{c|c}
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Context} & \begin{tabular}[c]{@{}c@{}}(cities OR "smart city" OR urban\\ OR "connected city" OR "intelligent city"\\ OR "digital city")\end{tabular} \\
+ & \textbf{AND} \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Intervention} & ("learning") \\
+ & \textbf{AND} \\
+\rowcolor[HTML]{EFEFEF} 
+\textbf{Outcome} & \begin{tabular}[c]{@{}c@{}}(participation OR collaboration\\ OR reflection OR awareness)\end{tabular}
+\end{tabular}
+\end{table}
+
+Different online databases offer different levels of search functionalities and details when going to use a complex query that possibly involves several keywords and fields (title, abstract, etc.).
+
+Some of the difficulties encountered were:
+\begin{itemize}
+\item limit on the number of keywords that can be used;
+\item limit on the fields where the search can be performed, search on title AND abstract not always possible;
+\item no precise and direct control on the target search fields, keywords could be only searched on a preset aggregation of fields like title, abstract, article keywords;
+\item different ways of coding the same logic expression, the same search string couldn't be reused on different databases;
+\item different formats of the result set, in some cases was possible to batch-download the results, otherwise results had been scraped using Zotero\footnote{https://www.zotero.org/} browser integration.
+\end{itemize}
+
+The keywords were searched on title and abstract when possible, otherwise only the abstract was used. In Table \ref{table:result_1} the size of the result sets for each online database are outlined.
+
+The articles collected were imported in a Zotero library, and duplicates were manually removed.
+
+%% table of result count
+\begin{savenotes}
+\begin{table}[ht]
+\setlength{\tabcolsep}{8pt}
+\centering
+\caption{Result Set for online databases before duplicates removal}
+\label{table:result_1}
+\begin{tabular}{cccccc|c}
+ & \cellcolor[HTML]{EFEFEF}\textbf{ISI} & \cellcolor[HTML]{EFEFEF}\textbf{ACM} & \cellcolor[HTML]{EFEFEF}\textbf{ScienceDirect} & \cellcolor[HTML]{EFEFEF}\textbf{Scopus} & \cellcolor[HTML]{EFEFEF}\textbf{IEEE} & \textbf{TOT} \\
+\textit{n} & 938 & 35 & 162 & 1022 & 42 & 2199 \\
+\textit{field} & topic\footnote{Topic fields include Titles, Abstracts, Keywords and Indexing fields such as Systematics, Taxonomic Terms and Descriptors} & abstract & abstract & abstract & abstract & 
+\end{tabular}
+\end{table}
+\end{savenotes}
+
+%% table no duplicates
+\begin{table}[ht]
+\setlength{\tabcolsep}{8pt}
+\centering
+\caption{Final Result Set without duplicates and selected articles for coding}
+\label{table:result_2}
+\begin{tabular}{cccc|c}
+ & \cellcolor[HTML]{EFEFEF}\textbf{Online Databases} & \cellcolor[HTML]{EFEFEF}\textbf{IJDLDC} & \cellcolor[HTML]{EFEFEF}\textbf{IxD\&A} & \textbf{TOT} \\
+\textit{n (no duplicates)} & 1485 & 5 & 11 & 1501 \\
+\textit{selected} & 156 & 4 & 10 & 170
+\end{tabular}
+\end{table}
